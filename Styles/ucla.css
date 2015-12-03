@@ -1,0 +1,539 @@
+@media print
+{
+	#PrintTable1
+	{
+		display:none;
+	}	
+	#PrintTable2
+	{
+		display:none;
+	}	
+	.regTextBlack
+	{
+		FONT-WEIGHT: normal;
+		FONT-SIZE: 11pt;
+		COLOR: black;
+		FONT-FAMILY: Calibri, Verdana, Arial;
+		TEXT-DECORATION: none
+	}
+	.boldTextBlack
+	{
+		FONT-WEIGHT: bold;
+		FONT-SIZE: 11pt;
+		COLOR: black;
+		FONT-FAMILY: Calibri, Verdana, Arial
+	}
+	A.reglinkMaroon
+	{
+		FONT-WEIGHT: normal;
+		FONT-SIZE: 12pt;
+		COLOR: maroon;
+		FONT-FAMILY: Calibri, Verdana, Arial;
+		TEXT-DECORATION: none
+	}
+	A.reglinkMaroon:hover
+	{
+		FONT-WEIGHT: 500;
+		FONT-SIZE: 12pt;
+		COLOR: #006600;
+		FONT-FAMILY: Calibri, Verdana, Arial;
+		TEXT-DECORATION: underline
+	}
+}
+
+@media screen
+{
+A.webButtonNormal
+{
+	display:block;
+	color:transparent;
+	width:150px;
+	height:50px;
+}
+
+A.webButtonNormal:hover
+{
+	background-position:left bottom;
+}
+
+A.webButtonLarge
+{
+	display:block;
+	color:transparent;
+	width:250px;
+	height:100px;
+}
+
+A.webButtonLarge:hover
+{
+	background-position:left bottom;
+}
+
+A.webButtonSaveNext
+{
+	display:block;
+	color:transparent;
+	width:270px;
+	height:25px;
+}
+
+A.webButtonSaveNext:hover
+{
+	background-position:left bottom;
+}
+
+A.webButtonSaveCheck
+{
+	display:block;
+	color:transparent;
+	width:300px;
+	height:25px;
+}
+
+A.webButtonSaveCheck:hover
+{
+	background-position:left bottom;
+}
+
+A.webButtonNavigation
+{
+	display:block;
+	color:transparent;
+	width:160px;
+	height:34px;
+}
+
+A.webButtonNavigation:hover
+{
+	background-position:left bottom;
+}
+
+div.Save
+{
+margin: 10px;
+border:1px red transparent;
+float:right;
+}
+
+.UCLAHeader
+{
+	font-weight: bold;
+	font-size: 15pt;
+	color: #22719A;
+	font-family: Verdana, Arial;
+}
+
+.UCLAHeader2
+{
+	font-weight: bold;
+	font-size: 13pt;
+	color: #22719A;
+	font-family: Verdana, Arial;
+}
+
+.UCLASubHeader
+{
+	font-weight: bold;
+	font-size: 11pt;
+	color: #22719A;
+	font-family: Verdana, Arial;
+}
+.tableBorder
+{
+	border-color:Navy;
+	border-width:thin;
+	border-style:solid;		
+}
+
+.UCLANavSelected
+{
+	font-weight: bold;
+	font-size: 13pt;
+	color: Red;
+	font-family: Calibri, Verdana, Arial;
+	text-decoration: underline;
+}
+
+.UCLANavSelectedComplete
+{
+	font-weight: bold;
+	font-size: 13pt;
+	color: Green;
+	font-family: Calibri, Verdana, Arial;
+	text-decoration: underline;
+}
+
+
+A.UCLANavItem
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 13pt;
+    COLOR: red;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    text-decoration:none;
+}
+A.UCLANavItem:hover
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 13pt;
+    COLOR: Navy;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    text-decoration:underline;
+}
+
+A.UCLANavItemComplete
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 13pt;
+    COLOR: Green;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    text-decoration:none;
+}
+A.UCLANavItemComplete:hover
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 13pt;
+    COLOR: Navy;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    text-decoration:underline;
+}
+
+.smallTextGray
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10pt;
+    COLOR:gray;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    TEXT-DECORATION: none
+}
+.smallTextBlack
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10pt;
+    COLOR:black;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    TEXT-DECORATION: none
+}
+.boldTextWhite
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: white;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    TEXT-DECORATION: none
+}
+.regTextBlack
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11pt;
+    COLOR: black;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    TEXT-DECORATION: none
+}
+.boldTextBlack
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11pt;
+    COLOR: black;
+    FONT-FAMILY: Calibri, Verdana, Arial
+}
+.regTextSlate
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 12pt;
+    COLOR: lightslategray;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    TEXT-DECORATION: line-through
+}
+.boldTextRed
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: red;
+    FONT-FAMILY: Calibri, Verdana, Arial
+}
+.boldTextLime
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: lime;
+    FONT-FAMILY: Calibri, Verdana, Arial
+}
+.regTextRed
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 12pt;
+    COLOR: red;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    TEXT-DECORATION: none
+}
+BODY2
+{
+    SCROLLBAR-FACE-COLOR: #e6f2ff;
+    SCROLLBAR-HIGHLIGHT-COLOR: #336699;
+    CURSOR: auto;
+    SCROLLBAR-SHADOW-COLOR: black;
+    SCROLLBAR-3DLIGHT-COLOR: #bfdfff;
+    SCROLLBAR-ARROW-COLOR: black;
+    SCROLLBAR-TRACK-COLOR: white;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    SCROLLBAR-DARKSHADOW-COLOR: #336699;
+    BACKGROUND-COLOR: white
+}
+BODY
+{
+    SCROLLBAR-FACE-COLOR: white;
+    FONT-SIZE: 10pt;
+    COLOR: black;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    BACKGROUND-COLOR: white;
+    TEXT-DECORATION: none
+}
+body
+{
+    SCROLLBAR-FACE-COLOR: white;
+    FONT-SIZE: 10pt;
+    COLOR: black;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    BACKGROUND-COLOR: white;
+    TEXT-DECORATION: none
+}
+
+.regTextGreen
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 12pt;
+    COLOR: #006600;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    TEXT-DECORATION: none
+}
+.lrgBoldTextBlack
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11pt;
+    COLOR: black;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    TEXT-DECORATION: none
+}
+.regTextMaroon
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10pt;
+    COLOR: maroon;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    TEXT-DECORATION: none
+}
+.headerMaroon
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 15pt;
+    COLOR: maroon;
+    FONT-FAMILY: Calibri, Verdana, Arial
+}
+.headerBlue
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 15pt;
+    COLOR: darkblue;
+    FONT-FAMILY: Calibri, Verdana, Arial
+}
+.headerBlack
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 15pt;
+    COLOR: black;
+    FONT-FAMILY: Calibri, Verdana, Arial
+}
+.subHeaderMaroon
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: maroon;
+    FONT-FAMILY: Calibri, Verdana, Arial
+}
+A.regLinkRed
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 12pt;
+    COLOR: red;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    TEXT-DECORATION: none
+}
+A.regLinkRed:hover
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 12pt;
+    COLOR: blue;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    TEXT-DECORATION: underline
+}
+A.headerLinkBlue
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 15pt;
+    COLOR: midnightblue;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    TEXT-DECORATION: none
+}
+A.headerLinkBlue:hover
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 15pt;
+    COLOR: darkred;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    TEXT-DECORATION: underline
+}
+.subHeaderBlue
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: darkblue;
+    FONT-FAMILY: Calibri, Verdana, Arial
+}
+.boldTextGreen
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: #006600;
+    FONT-FAMILY: Calibri, Verdana, Arial
+}
+.frenchHeaderBlue
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 13pt;
+    COLOR: darkblue;
+    FONT-FAMILY: Calibri, Verdana, Arial
+}
+.frenchSubHeaderBlue
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11pt;
+    COLOR: darkblue;
+    FONT-FAMILY: Calibri, Verdana, Arial
+}
+A.reglinkMaroon
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 12pt;
+    COLOR: maroon;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    TEXT-DECORATION: none
+}
+A.reglinkMaroon:hover
+{
+    FONT-WEIGHT: 500;
+    FONT-SIZE: 12pt;
+    COLOR: #006600;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    TEXT-DECORATION: underline
+}
+A.smalllinkMaroon
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10pt;
+    COLOR: maroon;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    TEXT-DECORATION: none
+}
+A.smalllinkMaroon:hover
+{
+    FONT-WEIGHT: 500;
+    FONT-SIZE: 10pt;
+    COLOR: #006600;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    TEXT-DECORATION: underline
+}
+INPUT
+{
+    FONT-WEIGHT: 500;
+    FONT-SIZE: 12pt;
+    COLOR: black;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    TEXT-DECORATION: none
+}
+A.regLinkBlue
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 12pt;
+    COLOR: navy;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    TEXT-DECORATION: none
+}
+A.regLinkBlue:hover
+{
+    FONT-WEIGHT: 500;
+    FONT-SIZE: 12pt;
+    COLOR: maroon;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    TEXT-DECORATION: underline
+}
+A.bigLinkRed
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: red;
+    FONT-FAMILY: Calibri, Verdana, Arial
+}
+A.bigLinkRed:hover
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: blue;
+    FONT-FAMILY: Calibri, Verdana, Arial
+}
+A.bigLinkBlue
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: midnightblue;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    TEXT-DECORATION: none
+}
+A.bigLinkBlue:hover
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: darkred;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    TEXT-DECORATION: underline
+}
+.lrgRegTextBlack
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 12pt;
+    COLOR: black;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    TEXT-DECORATION: none
+}
+A.regLinkGreen
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: #006600;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    TEXT-DECORATION: none
+}
+A.regLinkGreen:hover
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: maroon;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    TEXT-DECORATION: underline
+}A.boldLinkBlue
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11pt;
+    COLOR: navy;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    TEXT-DECORATION: none
+}
+A.boldLinkBlue:hover
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11pt;
+    COLOR: maroon;
+    FONT-FAMILY: Calibri, Verdana, Arial;
+    TEXT-DECORATION: underline
+}
+}
