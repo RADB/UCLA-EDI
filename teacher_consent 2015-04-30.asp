@@ -61,16 +61,9 @@ if blnSecurity then
 					            <p align="center" class="regTextBlack">University of California, Los Angeles</p>
                                 
 								<%
-								distID = cint(session("districtID"))
-								if distID = 305 or distID = 312 or distID = 335 or distID = 336 or distID = 337 or distID = 338 or distID = 339 or distID = 340 or distID = 341 or distID = 342 or distID = 343 then 'or distID = 25 
-									pk = true
-								else 
-									pk = false
-								end if
-								
 								' only write this section if not district 284
-								if pk = true  then 
-									response.write "<p align=""center"" class=""boldTextBlack"">PK4 TEACHER INFORMATION SHEET AND CONSENT FORM</p>"
+								if cint(session("districtID")) = 312  then 
+									response.write "<p align=""center"" class=""boldTextBlack"">Pre-K4 TEACHER INFORMATION SHEET AND CONSENT FORM</p>"
 								else
 									response.write "<p align=""center"" class=""boldTextBlack"">KINDERGARTEN TEACHER INFORMATION SHEET AND CONSENT FORM</p>"
 								end if 
@@ -82,22 +75,23 @@ if blnSecurity then
                                 <p align="left" class="regTextBlack">Please read the information below carefully and then select either "I Agree" or "I Do Not Agree".  You should print or save this consent form for your records.</p>
                                
 								<%
-								if pk = true  then
-									response.write "<p align=""left"" class=""regTextBlack"">The school district, in partnership with the UCLA Center for Healthier Children, Families and Communities is conducting a project in your school to collect information about children's development in PK4 using the Early Development Instrument (EDI). The EDI was developed by the Offord Centre for Child Studies at McMaster University in Canada in co-operation with principals and PK4 teachers. The EDI information will be used in your community to improve services for young children and their families. UCLA CHCFC is coordinating the EDI project which asks teachers to complete the EDI checklist on all children in their class and also complete several short anonymous teacher feedback forms.</p>"
+								if cint(session("districtID")) = 312  then
+									response.write "<p align=""left"" class=""regTextBlack"">The school district, in partnership with the UCLA Center for Healthier Children, Families and Communities is conducting a pilot project in your school to begin collecting information about children's development in preschool using the Early Development Instrument (EDI).  The EDI was developed by the Offord Centre for Child Studies at McMaster University in Canada in co-operation with principals and preschool teachers.  The EDI information will be used in your community to improve services for young children and their families.   UCLA CHCFC is coordinating the EDI project which asks teachers to complete the EDI checklist on all children in their class and also complete several short anonymous teacher feedback forms.</p>"
 								else
 									response.write "<p align=""left"" class=""regTextBlack"">The school district, in partnership with the UCLA Center for Healthier Children, Families and Communities is conducting a pilot project in your school to begin collecting information about children's development in kindergarten using the Early Development Instrument (EDI).  The EDI was developed by the Offord Centre for Child Studies at McMaster University in Canada in co-operation with principals and kindergarten teachers.  The EDI information will be used in your community to improve services for young children and their families.   UCLA CHCFC is coordinating the EDI project which asks teachers to complete the EDI checklist on all children in their class and also complete several short anonymous teacher feedback forms.</p>"
 								end if
 								
 								' only write this section if not district 284
 								if cint(session("districtID")) <> 284 then 
-								'	response.write "<p align=""left"" class=""regTextBlack"">You are being asked to participate in the EDI project because you and the other teachers in your school volunteered to use the EDI in your classrooms during the second half of the academic year.  Your participation in the EDI project is voluntary.  </p>"
+									response.write "<p align=""left"" class=""regTextBlack"">You are being asked to participate in the EDI project because you and the other teachers in your school volunteered to use the EDI in your classrooms during the second half of the academic year.  Your participation in the EDI project is voluntary.  </p>"
 								end if 
 								%>
                                 <p align="left" class="boldTextBlack">PURPOSE OF THE STUDY</p>
 
-                               	<%							
-								if pk=true then 
-									response.write "<p align=""left"" class=""regTextBlack"">The EDI is a population-based checklist that holistically assesses groups of kindergarten-age children in the areas of physical and social-emotional health as well as language and cognitive development. PK4 teachers complete an EDI on each child outside of class. Children's names do not appear on the EDI questionnaires and the EDI is not used as an individual level diagnostic tool. Results are never reported at the child, teacher or classroom level. The collected information is reported at a group level (i.e. school, neighborhood, school district, etc) and is used as a policy planning tool to improve strategies and systems for young children and their families.</p>"
+                               	<%
+								' only write this section if not district 284
+								if cint(session("districtID")) = 312 then 
+									response.write "<p align=""left"" class=""regTextBlack"">The EDI is a population-based Preschool checklist that holistically assesses groups of children in the areas of physical and social-emotional health as well as language and cognitive development.  Preschool teachers complete an EDI on each child outside of class.  Children's names do not appear on the EDI questionnaires and the EDI is not used as an individual level diagnostic tool.  Results are never reported at the child, teacher or classroom level.  The collected information is reported at a group level (i.e. school, neighborhood, school district, etc) and is used as a policy planning tool to improve strategies and systems for young children and their families.    </p>"
 								else
 									response.write "<p align=""left"" class=""regTextBlack"">The EDI is a population-based Kindergarten checklist that holistically assesses groups of children in the areas of physical and social-emotional health as well as language and cognitive development.  Kindergarten teachers complete an EDI on each child outside of class.  Children's names do not appear on the EDI questionnaires and the EDI is not used as an individual level diagnostic tool.  Results are never reported at the child, teacher or classroom level.  The collected information is reported at a group level (i.e. school, neighborhood, school district, etc) and is used as a policy planning tool to improve strategies and systems for young children and their families.    </p>"
 								end if 
@@ -105,17 +99,15 @@ if blnSecurity then
 							
                                 <p align="left" class="boldTextBlack">PROCEDURES</p>                                
 								<%
-								' 
-								'if cint(session("districtID")) <> 284 then 
-								'	response.write "<p align=""left"" class=""regTextBlack"">If you volunteer to participate in this study, we would ask you to do the following:</p>"
-								'else 
-								'	response.write "<p align=""left"" class=""regTextBlack"">If you are participating in this study, we would ask you to do the following:</p>"
-								'end if 
-								
-								response.write "<p align=""left"" class=""regTextBlack"">Participation in this project involves the following:</p>"
-                                %>
-								<ul>
-                                <li class="regTextBlack">Receive a 1-2hour orientation on how to fill out the EDI at your school site;</li> 
+								' only write this section if not district 284
+								if cint(session("districtID")) <> 284 then 
+									response.write "<p align=""left"" class=""regTextBlack"">If you volunteer to participate in this study, we would ask you to do the following:</p>"
+								else 
+									response.write "<p align=""left"" class=""regTextBlack"">If you are participating in this study, we would ask you to do the following:</p>"
+								end if 
+								%>
+                                <ul>
+                                <li class="regTextBlack">Receive a 2-hour orientation on how to fill out the EDI at your school site;</li> 
                                 <li class="regTextBlack">Complete a confidential Teacher Form to evaluate your satisfaction with the overall implementation process and collect basic demographic information (approximately 5 minutes);</li> 
                                 <li class="regTextBlack">Fill out an EDI student checklist on each child in your classroom (approximately 10-20 minutes per student);</li> 
                                 </ul>
@@ -136,7 +128,7 @@ if blnSecurity then
 								' only write this section if not district 284
 								if cint(session("districtID")) <> 284 then 
 									response.write "<p align=""left"" class=""boldTextBlack"">PAYMENT FOR PARTICIPATION</p>"
-									response.write "<p align=""left"" class=""regTextBlack"">If teachers are asked to participate in the EDI project during school hours, then EDI related activities will either take place during an administrative training day or substitute teachers will be provided. If teachers are asked to participate in completing the EDIs after school hours, then their participation will be strictly voluntary. In this case, participating teachers will be compensated for their time according to local school policies. Teacher compensation is based on the equivalent of 10-20 minutes per EDI performed plus two hours for training and evaluation activities combined.</p>"
+									response.write "<p align=""left"" class=""regTextBlack"">Participating teachers will be compensated for their time according to local school policies.  Teacher compensation is based on the equivalent of 10-20 minutes per EDI performed plus two hours for training and if applicable, one hour for evaluation activities. </p>"
 								end if 
 								%>
                                 <p align="left" class="boldTextBlack">CONFIDENTIALITY</p>
@@ -149,14 +141,14 @@ if blnSecurity then
 								' only write this section if not district 284
 								if cint(session("districtID")) <> 284 then                                 
 									response.write "<p align=""left"" class=""boldTextBlack"">PARTICIPATION AND WITHDRAWAL</p>"
-									response.write "<p align=""left"" class=""regTextBlack"">If teachers are asked to participate in the EDI project during school hours, then EDI related activities will either take place during an administrative training day or substitute teachers will be provided. If teachers are asked to participate in completing the EDIs after school hours, then you can choose whether to be in this study or not. If you volunteer to be in this study, you may withdraw at any time without consequences of any kind.</p>"
+									response.write "<p align=""left"" class=""regTextBlack"">You can choose whether to be in this study or not.  If you volunteer to be in this study, you may withdraw at any time without consequences of any kind.  </p>"
 								end if 
 								%>
                                 <p align="left" class="boldTextBlack">IDENTIFICATION OF INVESTIGATORS</p>
                                 <p align="left" class="regTextBlack">If you have any questions or concerns about the EDI project, please contact your school district representative</p>
 
                                 <p align="left" class="boldTextBlack">RIGHTS OF TEACHER PARTICIPATING IN PROJECT</p>
-                                <p align="left" class="regTextBlack">You are not waiving any legal rights because of your participation in the EDI Project. If you wish to ask questions about your rights as a research participant or if you wish to voice any problems or concerns you may have about the study to someone other than the researchers, please call the Office of the Human Research Protection Program at (310) 825-7122 or write to Office of the Human Research Protection Program, UCLA, 11000 Kinross Avenue, Suite 102, Box 951694, Los Angeles, CA 90095-1694.</p>  
+                                <p align="left" class="regTextBlack">You may withdraw your consent at any time and discontinue participation without penalty.  You are not waiving any legal rights because of your participation in the EDI Project.  If you have questions regarding your rights as a participant in this project, contact the Office for Protection of Research Subjects, UCLA, 11000 Kinross Avenue, Suite 102, Box 951694, Los Angeles, CA 90095-1694, (310) 825-8714.</p>  
 
                                 <p align="left" class="boldTextBlack">TEACHER CONSENT</p>
 
