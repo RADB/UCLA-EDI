@@ -1,11 +1,15 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Start JavaScript files-->
 		<script language="javascript" type="text/javascript" src="JS/ucla.js"></script>
+		<script src="JS/jquery.min.js"></script>
+		<script src="JS/bootstrap.min.js"></script>
 	<!-- End JavaScript files-->
-	
+  
 	<!-- Start CSS files-->
 		<link rel="stylesheet" type="text/css" href="Styles/ucla.css">
+		<link rel="stylesheet" type="text/css" href="Styles/bootstrap.min.css">
 	<!-- End CSS files -->
 	
 	<title>Welcome to e-EDI: The electronic Early Development Instrument</title>
