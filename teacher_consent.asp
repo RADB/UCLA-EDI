@@ -29,7 +29,7 @@ if blnSecurity then
         end if 
                 
         ' redirect to teacher page
-        response.redirect("teacher.asp")
+        response.redirect("teacher_account.asp")
     end if     
 %>
 <html>
