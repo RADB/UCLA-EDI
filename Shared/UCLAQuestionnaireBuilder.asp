@@ -383,7 +383,7 @@ function getNavigation(currentSection, strEDIID, QuestionnaireID)
     aSection(5) = "Section E"
     
     i = 0
-    strHTML = "<br />&nbsp;<input type=""button"" onclick=""javascript:goWindow('documents/EDI Teacher Guide 2012.pdf','Guide','490','500','top=0,left=125,resizable=yes');"" name=""btnGuide"" value=""GUIDE"" title=""GUIDE"" />"
+    strHTML = "<br />&nbsp;<input type=""button"" onclick=""javascript:goWindow('documents/Teacher Guide.pdf','Guide','490','500','top=0,left=125,resizable=yes');"" name=""btnGuide"" value=""GUIDE"" title=""GUIDE"" />"
     for each item in aSection       
 		if sectionComplete(i) then 
 			strNavClass = "UCLANavItemComplete"
